@@ -26,15 +26,14 @@ def oracle_query_fetch(query):
 # dATA SHOULD BE IN SAME ORDER FOR COMPARISON
 sql_data = sql_query_fetch("SELECT * FROM EMP_1") 
 oracle_data = oracle_query_fetch("SELECT * FROM EMPLOYEES where empid IN(101,102)")
+print(sql_data)
+print(oracle_data)
 
-# print(sql_data)
-# print(oracle_data)
-
-def compare_data(sql_data, oracle_data):
-    if sql_data not in oracle_data or oracle_data not in sql_data:
-        print("Data does not match between SQL Server and Oracle.")
-        return
-    print("Data matches between SQL Server and Oracle.")
+# def test_compare_data(sql_data, oracle_data):
+#     if sql_data not in oracle_data or oracle_data not in sql_data:
+#         print("Data does not match between SQL Server and Oracle.")
+#         return
+#     print("Data matches between SQL Server and Oracle.")
 
 # if sql_data==oracle_data:
 #     print("Data matches between SQL Server and Oracle.")
@@ -55,4 +54,4 @@ def compare_data(sql_data, oracle_data):
 #            print(f"Mismatch found:\nSQL Server: {sql_row}\nOracle: {oracle_row}")
 #            return
    
-compare_data(sql_data, oracle_data)
+# compare_data(sql_data, oracle_data)
