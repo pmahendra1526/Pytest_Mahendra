@@ -89,3 +89,9 @@ def execute_oracle_query_cursor(query):
     except Exception as e:
         print(f"Query execution failed: {e}")
         return None
+
+
+# connection,cursor=execute_sql_query_cursor("SELECT * FROM EMP_1 order by 1")
+# print(connection,cursor)
+
+# sql_server_connection()

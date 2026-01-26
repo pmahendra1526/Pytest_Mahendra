@@ -2,6 +2,7 @@ import pyodbc
 import oracledb
 import os
 from dotenv import load_dotenv
+import pytest
 
 # Load environment variables from .env file
 load_dotenv()
@@ -48,4 +49,4 @@ def test_sql_server_connection():
         if 'connection' in locals():
             connection.close()
 
-test_sql_server_connection()
+# test_sql_server_connection()
