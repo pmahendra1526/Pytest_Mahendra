@@ -2,6 +2,7 @@ import pyodbc
 import oracledb
 import os
 from dotenv import load_dotenv
+import pandas as pd
 
 # Load environment variables from .env file
 load_dotenv()
@@ -45,21 +46,46 @@ def sql_server_connection():
     #     if 'connection' in locals():
     #         connection.close()
 
-
-# sql_server_connection()
-# oracle_connection()
-
-# def fetch_table_data():
-#     connection,cursor=sql_server_connection()
-#     print("In fetch_table_data")
-#     print(connection,cursor)
-#     cursor.execute("SELECT * FROM EMPLOYEES")
-#     columns = [desc[0] for desc in cursor.description]
-#     data = [dict(zip(columns, row)) for row in cursor.fetchall()]
-#     print(data)
-#     if 'cursor' in locals():
-#         cursor.close()
-#     if 'connection' in locals():
-#         connection.close()
+def execute_sql_query_pandas(query):
+    sql_conn,sql_cursor= sql_server_connection()
+    try:
+        sql_data = pd.read_sql_query(query, sql_conn)
+        return sql_data
+    except Exception as e:
+        print(f"Query execution failed: {e}")
+        return None
     
-# fetch_table_data()
+def execute_oracle_query_pandas(query):
+    oracle_conn,oracle_cursor= oracle_connection()
+    try:
+        oracle_data = pd.read_sql_query(query, oracle_conn)
+        return oracle_data
+    except Exception as e:
+        print(f"Query execution failed: {e}")
+        return None
+
+def execute_sql_query_cursor(query):
+    sql_conn,sql_cursor= sql_server_connection()
+    try:
+        sql_cursor.execute(query)
+        data = sql_cursor.fetchall()
+        columns = [desc[0] for desc in sql_cursor.description]
+        # sql_data = [{columns[i]: row[i] for i in range(len(columns))} for row in data]
+        sql_data = [dict(zip(columns, row)) for row in data]
+        return sql_data
+    except Exception as e:
+        print(f"Query execution failed: {e}")
+        return None
+
+def execute_oracle_query_cursor(query):
+    oracle_conn,oracle_cursor= oracle_connection()
+    try:
+        oracle_cursor.execute(query)
+        data = oracle_cursor.fetchall()
+        columns = [desc[0] for desc in oracle_cursor.description]
+        oracle_data = [{columns[i]: row[i] for i in range(len(columns))} for row in data]
+        # oracle_data = [dict(zip(columns, row)) for row in data]
+        return oracle_data
+    except Exception as e:
+        print(f"Query execution failed: {e}")
+        return None
