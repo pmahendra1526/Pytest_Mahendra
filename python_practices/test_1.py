@@ -16,7 +16,14 @@ def test_oracle_connection():
     try:
         connection = oracledb.connect(user=user, password=password, dsn=dsn)
         cursor = connection.cursor()
-        cursor.execute("SELECT 1 FROM EMPLOYEES")
+        cursor.execute("SELECT * FROM EMPLOYEES")
+        print(cursor.description)
+        columns=[col[0] for col in cursor.description]
+        print(columns)
+        # print(cursor.fetchall())
+        # data=[row for row in cursor.fetchall()]
+        data = [dict(zip(columns, row)) for row in cursor.fetchall()]
+        print(data)
         result = cursor.fetchone()
         assert result[0] == 1
         print("Oracle connection test passed.")
@@ -49,4 +56,22 @@ def test_sql_server_connection():
         if 'connection' in locals():
             connection.close()
 
-# test_sql_server_connection()
+test_sql_server_connection()
+
+
+# # list=[(101, 'John Doe', 50000.0), (102, 'Jane Smith', None), (103, 'Peter Jones', 60000.0), (104, 'Mary Williams', 55000.0)]
+# # # # res=dict(zip(['EMPID', 'EMPNAME', 'SALARY'],list) )
+# # columns=['EMPID', 'EMPNAME', 'SALARY']
+# # res=[dict(zip(columns,list)) for list in list]
+# # print(res)
+
+# # data = [dict(zip(['EMPID', 'EMPNAME', 'SALARY'], row)) for row in list]
+# # print(data)
+
+# print("Test Data")
+# res=zip(['EMPID', 'EMPNAME', 'SALARY'],(102, 'Jane Smith', 200))
+
+# # print(dict(res))
+
+# # print(list(res))
+# print(dict(res))

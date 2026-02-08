@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">HtmlReports.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">HtmlReports.html</h1>
+    <p>Report generated on 09-Feb-2026 at 01:34:31 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">19 tests took 00:00:06.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">13 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">6 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.5&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;bdd&#34;: &#34;8.1.0&#34;, &#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;tests/test_Compare_Cursor.py::test_dataCompare_data_cursor&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Cursor.py::test_dataCompare_data_cursor&#34;, &#34;duration&#34;: &#34;164 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Cursor.py::test_dataCompare_data_cursor&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;164 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.mark.data\n    def test_dataCompare_data_cursor():\n        sql_data = execute_sql_query_cursor(sql_query)\n        oracle_data = execute_oracle_query_cursor(oracle_query)\n        print(sql_data)\n        print(oracle_data)\n&amp;gt;       assert sql_data == oracle_data, &amp;quot;Data does not match between SQL Server and Oracle.&amp;quot;\nE       AssertionError: Data does not match between SQL Server and Oracle.\nE       assert [{&amp;#x27;EMPID&amp;#x27;: 10...(&amp;#x27;10000.00&amp;#x27;)}] == [{&amp;#x27;EMPID&amp;#x27;: 10...ALARY&amp;#x27;: None}]\nE         \nE         At index 1 diff: {&amp;#x27;EMPID&amp;#x27;: 102, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;Jane Smith&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: Decimal(&amp;#x27;10000.00&amp;#x27;)} != {&amp;#x27;EMPID&amp;#x27;: 102, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;Jane Smith&amp;#x27;, ...\nE         \nE         ...Full output truncated (18 lines hidden), use &amp;#x27;-vv&amp;#x27; to show\n\ntest_Compare_Cursor.py:15: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nsql_cursor Fetch All:: [(101, &amp;#x27;John Doe&amp;#x27;, Decimal(&amp;#x27;50000.00&amp;#x27;)), (102, &amp;#x27;Jane Smith&amp;#x27;, Decimal(&amp;#x27;10000.00&amp;#x27;))]\nsql_cursor Description:: ((&amp;#x27;EMPID&amp;#x27;, &amp;lt;class &amp;#x27;int&amp;#x27;&amp;gt;, None, 10, 10, 0, False), (&amp;#x27;EMPNAME&amp;#x27;, &amp;lt;class &amp;#x27;str&amp;#x27;&amp;gt;, None, 101, 101, 0, False), (&amp;#x27;SALARY&amp;#x27;, &amp;lt;class &amp;#x27;decimal.Decimal&amp;#x27;&amp;gt;, None, 10, 10, 2, True))\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\n[{&amp;#x27;EMPID&amp;#x27;: 101, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;John Doe&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: Decimal(&amp;#x27;50000.00&amp;#x27;)}, {&amp;#x27;EMPID&amp;#x27;: 102, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;Jane Smith&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: Decimal(&amp;#x27;10000.00&amp;#x27;)}]\n[{&amp;#x27;EMPID&amp;#x27;: 101, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;John Doe&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: 50000.0}, {&amp;#x27;EMPID&amp;#x27;: 102, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;Jane Smith&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: None}]\n&#34;}], &#34;tests/test_Compare_Cursor.py::test_countCheck_cursor&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Cursor.py::test_countCheck_cursor&#34;, &#34;duration&#34;: &#34;74 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Cursor.py::test_countCheck_cursor&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;74 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nsql_cursor Fetch All:: [(101, &amp;#x27;John Doe&amp;#x27;, Decimal(&amp;#x27;50000.00&amp;#x27;)), (102, &amp;#x27;Jane Smith&amp;#x27;, Decimal(&amp;#x27;10000.00&amp;#x27;))]\nsql_cursor Description:: ((&amp;#x27;EMPID&amp;#x27;, &amp;lt;class &amp;#x27;int&amp;#x27;&amp;gt;, None, 10, 10, 0, False), (&amp;#x27;EMPNAME&amp;#x27;, &amp;lt;class &amp;#x27;str&amp;#x27;&amp;gt;, None, 101, 101, 0, False), (&amp;#x27;SALARY&amp;#x27;, &amp;lt;class &amp;#x27;decimal.Decimal&amp;#x27;&amp;gt;, None, 10, 10, 2, True))\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\n[{&amp;#x27;EMPID&amp;#x27;: 101, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;John Doe&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: Decimal(&amp;#x27;50000.00&amp;#x27;)}, {&amp;#x27;EMPID&amp;#x27;: 102, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;Jane Smith&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: Decimal(&amp;#x27;10000.00&amp;#x27;)}]\n[{&amp;#x27;EMPID&amp;#x27;: 101, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;John Doe&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: 50000.0}, {&amp;#x27;EMPID&amp;#x27;: 102, &amp;#x27;EMPNAME&amp;#x27;: &amp;#x27;Jane Smith&amp;#x27;, &amp;#x27;SALARY&amp;#x27;: None}]\n&#34;}], &#34;tests/test_Compare_Pandas.py::test_dataCompare_data_pandas&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Pandas.py::test_dataCompare_data_pandas&#34;, &#34;duration&#34;: &#34;115 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Pandas.py::test_dataCompare_data_pandas&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;115 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;def test_dataCompare_data_pandas():\n        sql_data = execute_sql_query_pandas(sql_query)\n        oracle_data = execute_oracle_query_pandas(oracle_query)\n        print(&amp;quot;ORACLE DATA::&amp;quot;,sql_data)\n        print(&amp;quot;ORACLE DATA::&amp;quot;,oracle_data)\n        # result=pd.merge(sql_data,oracle_data,how=&amp;quot;outer&amp;quot;,indicator=True)\n        # differences=result[result[&amp;#x27;_merge&amp;#x27;] != &amp;#x27;both&amp;#x27;]\n        # print(differences)\n        # assert len(differences)==0, &amp;quot;Data does not match between SQL Server and Oracle.&amp;quot;\n&amp;gt;       assert sql_data.equals(oracle_data), &amp;quot;Data does not match between SQL Server and Oracle.&amp;quot;\nE       AssertionError: Data does not match between SQL Server and Oracle.\nE       assert False\nE        +  where False = equals(   EMPID     EMPNAME   SALARY\\n0    101    John Doe  50000.0\\n1    102  Jane Smith      NaN)\nE        +    where equals =    EMPID     EMPNAME   SALARY\\n0    101    John Doe  50000.0\\n1    102  Jane Smith  10000.0.equals\n\ntest_Compare_Pandas.py:19: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\nORACLE DATA::    EMPID     EMPNAME   SALARY\n0    101    John Doe  50000.0\n1    102  Jane Smith  10000.0\nORACLE DATA::    EMPID     EMPNAME   SALARY\n0    101    John Doe  50000.0\n1    102  Jane Smith      NaN\n&#34;}], &#34;tests/test_Compare_Pandas.py::test_countCheck_pandas&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Pandas.py::test_countCheck_pandas&#34;, &#34;duration&#34;: &#34;75 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Pandas.py::test_countCheck_pandas&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;75 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\n   EMPID     EMPNAME   SALARY\n0    101    John Doe  50000.0\n1    102  Jane Smith  10000.0\n   EMPID     EMPNAME   SALARY\n0    101    John Doe  50000.0\n1    102  Jane Smith      NaN\n&#34;}], &#34;tests/test_Compare_Pandas.py::test_schema_pandas&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Pandas.py::test_schema_pandas&#34;, &#34;duration&#34;: &#34;209 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Pandas.py::test_schema_pandas&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;209 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;def test_schema_pandas():\n        sql_data = execute_sql_query_pandas(&amp;quot;SELECT COLUMN_NAME,DATA_TYPE,IS_NULLABLE FROM INFORMATION_SCHEMA.COLUMNS \\\n                    WHERE TABLE_NAME=&amp;#x27;EMP_1&amp;#x27;&amp;quot;)\n        oracle_data = execute_oracle_query_pandas(&amp;quot;SELECT COLUMN_NAME,DATA_TYPE,NULLABLE AS IS_NULLABLE FROM USER_TAB_COLUMNS WHERE TABLE_NAME=&amp;#x27;EMPLOYEES&amp;#x27;&amp;quot;)\n        oracle_data = convert_column_datatypes(oracle_data)\n        print(sql_data)\n        print(oracle_data)\n        result=pd.merge(sql_data,oracle_data,how=&amp;quot;outer&amp;quot;,indicator=True)\n        differences=result[result[&amp;#x27;_merge&amp;#x27;] != &amp;#x27;both&amp;#x27;]\n        print(differences)\n&amp;gt;       assert len(differences)==0, &amp;quot;Schema Not Matching&amp;quot;\nE       AssertionError: Schema Not Matching\nE       assert 4 == 0\nE        +  where 4 = len(  COLUMN_NAME DATA_TYPE IS_NULLABLE      _merge\\n1     EMPNAME   varchar          NO   left_only\\n2     EMPNAME   varchar         YES  right_only\\n3      SALARY   decimal         YES   left_only\\n4      SALARY       int         YES  right_only)\n\ntest_Compare_Pandas.py:40: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\n[&amp;#x27;COLUMN_NAME&amp;#x27;, &amp;#x27;DATA_TYPE&amp;#x27;, &amp;#x27;IS_NULLABLE&amp;#x27;]\n  COLUMN_NAME DATA_TYPE IS_NULLABLE\n0       EMPID       int          NO\n1     EMPNAME   varchar          NO\n2      SALARY   decimal         YES\n  COLUMN_NAME DATA_TYPE IS_NULLABLE\n0       EMPID       int          NO\n1     EMPNAME   varchar         YES\n2      SALARY       int         YES\n  COLUMN_NAME DATA_TYPE IS_NULLABLE      _merge\n1     EMPNAME   varchar          NO   left_only\n2     EMPNAME   varchar         YES  right_only\n3      SALARY   decimal         YES   left_only\n4      SALARY       int         YES  right_only\n&#34;}], &#34;tests/test_Compare_Parameterize.py::test_count_check[EMP_1-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Parameterize.py::test_count_check[EMP_1-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;104 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Parameterize.py::test_count_check[EMP_1-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;104 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;sql_table = &amp;#x27;EMP_1&amp;#x27;, oracle_table = &amp;#x27;EMPLOYEES&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;sql_table,oracle_table&amp;quot;,\n                             [(&amp;#x27;EMP_1&amp;#x27;,&amp;#x27;EMPLOYEES&amp;#x27;),(&amp;#x27;EMP&amp;#x27;,&amp;#x27;EMPLOYEES&amp;#x27;),\n                              (&amp;#x27;EMPLOYEES&amp;#x27;,&amp;#x27;EMPLOYEES&amp;#x27;)])\n    def test_count_check(sql_table,oracle_table):\n        sql_df,oracle_df=execute_query(sql_table,oracle_table)\n&amp;gt;       assert len(sql_df)==len(oracle_df),f&amp;quot;SQL table {sql_table} count: {len(sql_df)} ,Oracle table {oracle_table} count: {len(oracle_df)}&amp;quot;\nE       AssertionError: SQL table EMP_1 count: 2 ,Oracle table EMPLOYEES count: 4\nE       assert 2 == 4\nE        +  where 2 = len(   EMPID     EMPNAME   SALARY\\n0    102  Jane Smith  10000.0\\n1    101    John Doe  50000.0)\nE        +  and   4 = len(   EMPID        EMPNAME   SALARY\\n0    101       John Doe  50000.0\\n1    102     Jane Smith      NaN\\n2    103    Peter Jones  60000.0\\n3    104  Mary Williams  55000.0)\n\ntest_Compare_Parameterize.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nTest\nEMP_1 EMPLOYEES\nConnection Successfull to SQL Server\nConnection Successfull to Oracle\n&amp;lt;pyodbc.Connection object at 0x000001B8DDD19BD0&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n&#34;}], &#34;tests/test_Compare_Parameterize.py::test_count_check[EMP-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Parameterize.py::test_count_check[EMP-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;117 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Parameterize.py::test_count_check[EMP-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;117 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest\nEMP EMPLOYEES\nConnection Successfull to SQL Server\nConnection Successfull to Oracle\n&amp;lt;pyodbc.Connection object at 0x000001B8DDCE8510&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   EmpID FirstName LastName  ...              JobTitle    Salary MgrID\n0      1      John      Doe  ...                   CEO  150000.0   NaN\n1      2      Jane    Smith  ...              VP Sales  100000.0   1.0\n2      3     Peter    Jones  ...         Sales Manager   75000.0   2.0\n3      4     Alice    Brown  ...  Sales Representative   50000.0   3.0\n\n[4 rows x 9 columns]\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n&#34;}], &#34;tests/test_Compare_Parameterize.py::test_count_check[EMPLOYEES-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_Compare_Parameterize.py::test_count_check[EMPLOYEES-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;142 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_Compare_Parameterize.py::test_count_check[EMPLOYEES-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;142 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;sql_table = &amp;#x27;EMPLOYEES&amp;#x27;, oracle_table = &amp;#x27;EMPLOYEES&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;sql_table,oracle_table&amp;quot;,\n                             [(&amp;#x27;EMP_1&amp;#x27;,&amp;#x27;EMPLOYEES&amp;#x27;),(&amp;#x27;EMP&amp;#x27;,&amp;#x27;EMPLOYEES&amp;#x27;),\n                              (&amp;#x27;EMPLOYEES&amp;#x27;,&amp;#x27;EMPLOYEES&amp;#x27;)])\n    def test_count_check(sql_table,oracle_table):\n        sql_df,oracle_df=execute_query(sql_table,oracle_table)\n&amp;gt;       assert len(sql_df)==len(oracle_df),f&amp;quot;SQL table {sql_table} count: {len(sql_df)} ,Oracle table {oracle_table} count: {len(oracle_df)}&amp;quot;\nE       AssertionError: SQL table EMPLOYEES count: 18 ,Oracle table EMPLOYEES count: 4\nE       assert 18 == 4\nE        +  where 18 = len(    EmployeeID  FirstName  LastName  ... DepartmentID   Salary    HireDate\\n0            1       John     Smith  ...            3  60000.0  2020-01-15\\n1            2      Sarah   Johnson  ...            2  55000.0  2019-08-10\\n2            3    Michael  Williams  ...            3  62000.0  2021-03-22\\n3            4      Emily     Brown  ...            4  58000.0  2022-05-18\\n4            5      David     Jones  ...            5  65000.0  2018-12-01\\n5            6     Olivia     Davis  ...            2  54000.0  2023-02-10\\n6            7      James    Wilson  ...            6  70000.0  2017-07-15\\n7            8     Sophia  Anderson  ...            4  59000.0  2019-10-30\\n8            9       Liam    Miller  ...            3  61000.0  2020-11-05\\n9           10       Emma    Taylor  ...            5  63000.0  2022-04-02\\n10          11     Robert   Johnson  ...            4  58000.0  2020-06-15\\n11          12        Mia     Moore  ...            5  67000.0  2019-05-10\\n12          13    William     Clark  ...            3  61000.0  2022-09-12\\n13          14  Charlotte  Anderson  ...            2 -50000.0  2019-11-28\\n14          15     Daniel     Davis  ...            4  59000.0  2020-08-03\\n15          16     Sophia    Turner  ...            5  64000.0  2018-10-15\\n16          17    Matthew    Parker  ...            6 -30000.0  2022-02-20\\n17          18        Ava  Williams  ...            2  57000.0  2021-04-10\\n\\n[18 rows x 8 columns])\nE        +  and   4 = len(   EMPID        EMPNAME   SALARY\\n0    101       John Doe  50000.0\\n1    102     Jane Smith      NaN\\n2    103    Peter Jones  60000.0\\n3    104  Mary Williams  55000.0)\n\ntest_Compare_Parameterize.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nTest\nEMPLOYEES EMPLOYEES\nConnection Successfull to SQL Server\nConnection Successfull to Oracle\n&amp;lt;pyodbc.Connection object at 0x000001B8DDCE89F0&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n    EmployeeID  FirstName  LastName  ... DepartmentID   Salary    HireDate\n0            1       John     Smith  ...            3  60000.0  2020-01-15\n1            2      Sarah   Johnson  ...            2  55000.0  2019-08-10\n2            3    Michael  Williams  ...            3  62000.0  2021-03-22\n3            4      Emily     Brown  ...            4  58000.0  2022-05-18\n4            5      David     Jones  ...            5  65000.0  2018-12-01\n5            6     Olivia     Davis  ...            2  54000.0  2023-02-10\n6            7      James    Wilson  ...            6  70000.0  2017-07-15\n7            8     Sophia  Anderson  ...            4  59000.0  2019-10-30\n8            9       Liam    Miller  ...            3  61000.0  2020-11-05\n9           10       Emma    Taylor  ...            5  63000.0  2022-04-02\n10          11     Robert   Johnson  ...            4  58000.0  2020-06-15\n11          12        Mia     Moore  ...            5  67000.0  2019-05-10\n12          13    William     Clark  ...            3  61000.0  2022-09-12\n13          14  Charlotte  Anderson  ...            2 -50000.0  2019-11-28\n14          15     Daniel     Davis  ...            4  59000.0  2020-08-03\n15          16     Sophia    Turner  ...            5  64000.0  2018-10-15\n16          17    Matthew    Parker  ...            6 -30000.0  2022-02-20\n17          18        Ava  Williams  ...            2  57000.0  2021-04-10\n\n[18 rows x 8 columns]\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n&#34;}], &#34;tests/test_bdd_feature01.py::test_records_count&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_bdd_feature01.py::test_records_count&#34;, &#34;duration&#34;: &#34;70 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bdd_feature01.py::test_records_count&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;70 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;fixturefunc = &amp;lt;function compare_records_count at 0x000001B8DDD420C0&amp;gt;, request = &amp;lt;FixtureRequest for &amp;lt;Function test_records_count&amp;gt;&amp;gt;\nkwargs = {}\n\n    def call_fixture_func(\n        fixturefunc: _FixtureFunc[FixtureValue], request: FixtureRequest, kwargs\n    ) -&amp;gt; FixtureValue:\n        if inspect.isgeneratorfunction(fixturefunc):\n            fixturefunc = cast(Callable[..., Generator[FixtureValue]], fixturefunc)\n            generator = fixturefunc(**kwargs)\n            try:\n                fixture_result = next(generator)\n            except StopIteration:\n                raise ValueError(f&amp;quot;{request.fixturename} did not yield a value&amp;quot;) from None\n            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)\n            request.addfinalizer(finalizer)\n        else:\n            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)\n&amp;gt;           fixture_result = fixturefunc(**kwargs)\n                             ^^^^^^^^^^^^^^^^^^^^^\n\n..\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py:915: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    @then(&amp;quot;Records count should match&amp;quot;)\n    def compare_records_count():\n&amp;gt;       assert row_count[&amp;#x27;sql_count&amp;#x27;]==row_count[&amp;#x27;oracle_count&amp;#x27;],f&amp;quot;Count not matching. SQL Count is {row_count[&amp;#x27;sql_count&amp;#x27;]}, Oracle count is {row_count[&amp;#x27;oracle_count&amp;#x27;]}&amp;quot;\nE       AssertionError: Count not matching. SQL Count is 2, Oracle count is 4\nE       assert 2 == 4\n\ntest_bdd_feature01.py:31: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\ncheck_connections:: &amp;lt;pyodbc.Connection object at 0x000001B8DDCE89F0&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\nget_records_count\n{&amp;#x27;sql_count&amp;#x27;: 2, &amp;#x27;oracle_count&amp;#x27;: 4}\n--------------------------- Captured stdout teardown ---------------------------\nIn Orcale Connections after yield\nIn SQL Connections after yield\n&#34;}], &#34;tests/test_bdd_feature02.py::test_records_count[EMP_1-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_bdd_feature02.py::test_records_count[EMP_1-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;78 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bdd_feature02.py::test_records_count[EMP_1-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;78 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;fixturefunc = &amp;lt;function compare_records_count at 0x000001B8DDD42AC0&amp;gt;\nrequest = &amp;lt;FixtureRequest for &amp;lt;Function test_records_count[EMP_1-EMPLOYEES]&amp;gt;&amp;gt;, kwargs = {}\n\n    def call_fixture_func(\n        fixturefunc: _FixtureFunc[FixtureValue], request: FixtureRequest, kwargs\n    ) -&amp;gt; FixtureValue:\n        if inspect.isgeneratorfunction(fixturefunc):\n            fixturefunc = cast(Callable[..., Generator[FixtureValue]], fixturefunc)\n            generator = fixturefunc(**kwargs)\n            try:\n                fixture_result = next(generator)\n            except StopIteration:\n                raise ValueError(f&amp;quot;{request.fixturename} did not yield a value&amp;quot;) from None\n            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)\n            request.addfinalizer(finalizer)\n        else:\n            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)\n&amp;gt;           fixture_result = fixturefunc(**kwargs)\n                             ^^^^^^^^^^^^^^^^^^^^^\n\n..\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py:915: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    @then(&amp;quot;Records count should match&amp;quot;)\n    def compare_records_count():\n&amp;gt;       assert row_count[&amp;#x27;sql_count&amp;#x27;]==row_count[&amp;#x27;oracle_count&amp;#x27;],f&amp;quot;Count not matching. SQL Count is {row_count[&amp;#x27;sql_count&amp;#x27;]}, Oracle count is {row_count[&amp;#x27;oracle_count&amp;#x27;]}&amp;quot;\nE       AssertionError: Count not matching. SQL Count is 2, Oracle count is 4\nE       assert 2 == 4\n\ntest_bdd_feature02.py:35: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nSQL Server connection_string: \n    DRIVER={ODBC Driver 17 for SQL Server};\n    SERVER=DESKTOP-59J1BAM\\SQLEXPRESS;\n    DATABASE=Mahendra;\n    Trusted_Connection=yes;\n\nConnection Successfull to SQL Server\nOracle connection_string: SYSTEM/roshi@localhost:1521/XE\nConnection Successfull to Oracle\ncheck_connections:: &amp;lt;pyodbc.Connection object at 0x000001B8DDD19070&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\nIn execute_query_count1\nget_records_count\n{&amp;#x27;sql_count&amp;#x27;: 2, &amp;#x27;oracle_count&amp;#x27;: 4}\n&#34;}], &#34;tests/test_bdd_feature02.py::test_records_count[EMP-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bdd_feature02.py::test_records_count[EMP-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;6 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bdd_feature02.py::test_records_count[EMP-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;6 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\ncheck_connections:: &amp;lt;pyodbc.Connection object at 0x000001B8DDD19070&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\nget_records_count\n{&amp;#x27;sql_count&amp;#x27;: 4, &amp;#x27;oracle_count&amp;#x27;: 4}\ntest_records_count\n&#34;}], &#34;tests/test_bdd_feature02.py::test_records_count[EMPLOYEES-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_bdd_feature02.py::test_records_count[EMPLOYEES-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;10 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bdd_feature02.py::test_records_count[EMPLOYEES-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;10 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;fixturefunc = &amp;lt;function compare_records_count at 0x000001B8DDD42AC0&amp;gt;\nrequest = &amp;lt;FixtureRequest for &amp;lt;Function test_records_count[EMPLOYEES-EMPLOYEES]&amp;gt;&amp;gt;, kwargs = {}\n\n    def call_fixture_func(\n        fixturefunc: _FixtureFunc[FixtureValue], request: FixtureRequest, kwargs\n    ) -&amp;gt; FixtureValue:\n        if inspect.isgeneratorfunction(fixturefunc):\n            fixturefunc = cast(Callable[..., Generator[FixtureValue]], fixturefunc)\n            generator = fixturefunc(**kwargs)\n            try:\n                fixture_result = next(generator)\n            except StopIteration:\n                raise ValueError(f&amp;quot;{request.fixturename} did not yield a value&amp;quot;) from None\n            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)\n            request.addfinalizer(finalizer)\n        else:\n            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)\n&amp;gt;           fixture_result = fixturefunc(**kwargs)\n                             ^^^^^^^^^^^^^^^^^^^^^\n\n..\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py:915: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    @then(&amp;quot;Records count should match&amp;quot;)\n    def compare_records_count():\n&amp;gt;       assert row_count[&amp;#x27;sql_count&amp;#x27;]==row_count[&amp;#x27;oracle_count&amp;#x27;],f&amp;quot;Count not matching. SQL Count is {row_count[&amp;#x27;sql_count&amp;#x27;]}, Oracle count is {row_count[&amp;#x27;oracle_count&amp;#x27;]}&amp;quot;\nE       AssertionError: Count not matching. SQL Count is 18, Oracle count is 4\nE       assert 18 == 4\n\ntest_bdd_feature02.py:35: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\ncheck_connections:: &amp;lt;pyodbc.Connection object at 0x000001B8DDD19070&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\nget_records_count\n{&amp;#x27;sql_count&amp;#x27;: 18, &amp;#x27;oracle_count&amp;#x27;: 4}\n--------------------------- Captured stdout teardown ---------------------------\nIn Orcale Connections after yield\nIn SQL Connections after yield\n&#34;}], &#34;tests/test_fixtures.py::test_countCheck&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures.py::test_countCheck&#34;, &#34;duration&#34;: &#34;146 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures.py::test_countCheck&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;146 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;execute_query = (   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0,    EMPID        EMPNAME   ...  John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0)\n\n    def test_countCheck(execute_query):\n        print(&amp;quot;In test_countCheck&amp;quot;)\n        sql_data,oracle_data=execute_query[0],execute_query[1]\n        print(sql_data)\n        print(oracle_data)\n&amp;gt;       assert len(sql_data)==len(oracle_data),f&amp;quot;SQL Count:{len(sql_data)}, Oracle Count:{len(oracle_data)}&amp;quot;\nE       AssertionError: SQL Count:2, Oracle Count:4\nE       assert 2 == 4\nE        +  where 2 = len(   EMPID     EMPNAME   SALARY\\n0    102  Jane Smith  10000.0\\n1    101    John Doe  50000.0)\nE        +  and   4 = len(   EMPID        EMPNAME   SALARY\\n0    101       John Doe  50000.0\\n1    102     Jane Smith      NaN\\n2    103    Peter Jones  60000.0\\n3    104  Mary Williams  55000.0)\n\ntest_fixtures.py:10: AssertionError\n\n---------------------------- Captured stdout setup -----------------------------\nConnection Successfull to SQL Server\nConnection Successfull to Oracle\nTest\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC13B0&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC13B0&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n\n----------------------------- Captured stdout call -----------------------------\nIn test_countCheck\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n&#34;}], &#34;tests/test_fixtures.py::test_dataValidation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures.py::test_dataValidation&#34;, &#34;duration&#34;: &#34;60 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures.py::test_dataValidation&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;60 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;execute_query = (   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0,    EMPID        EMPNAME   ...  John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0)\n\n    def test_dataValidation(execute_query):\n        print(&amp;quot;In test_dataValidation&amp;quot;)\n        sql_data,oracle_data=execute_query[0],execute_query[1]\n        #\n        result=pd.merge(sql_data,oracle_data,how=&amp;quot;outer&amp;quot;,indicator=True)\n        difference=result[result[&amp;#x27;_merge&amp;#x27;] != &amp;#x27;both&amp;#x27;]\n        print(difference)\n&amp;gt;       assert difference.empty, &amp;quot;Data not matching.&amp;quot;\nE       AssertionError: Data not matching.\nE       assert False\nE        +  where False =    EMPID        EMPNAME   SALARY      _merge\\n1    102     Jane Smith  10000.0   left_only\\n2    102     Jane Smith      NaN  right_only\\n3    103    Peter Jones  60000.0  right_only\\n4    104  Mary Williams  55000.0  right_only.empty\n\ntest_fixtures.py:19: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nIn test_dataValidation\n   EMPID        EMPNAME   SALARY      _merge\n1    102     Jane Smith  10000.0   left_only\n2    102     Jane Smith      NaN  right_only\n3    103    Peter Jones  60000.0  right_only\n4    104  Mary Williams  55000.0  right_only\n--------------------------- Captured stdout teardown ---------------------------\nIn Orcale Connections after yield\nOracle Connection Closed\nIn SQL Connections after yield\nSQL Connection Closed\n&#34;}], &#34;tests/test_fixtures_parametrize.py::test_countCheck[EMP_1-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures_parametrize.py::test_countCheck[EMP_1-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;155 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures_parametrize.py::test_countCheck[EMP_1-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;155 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;execute_query = (   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0,    EMPID        EMPNAME   ...  John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0)\nsql_table = &amp;#x27;EMP_1&amp;#x27;, oracle_table = &amp;#x27;EMPLOYEES&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;sql_table,oracle_table&amp;quot;,params_list)\n    def test_countCheck(execute_query,sql_table,oracle_table):\n        print(&amp;quot;In test_countCheck&amp;quot;)\n        sql_data,oracle_data=execute_query[0],execute_query[1]\n        print(sql_data)\n        print(oracle_data)\n&amp;gt;       assert len(sql_data)==len(oracle_data),f&amp;quot;SQL Count:{len(sql_data)}, Oracle Count:{len(oracle_data)}&amp;quot;\nE       AssertionError: SQL Count:2, Oracle Count:4\nE       assert 2 == 4\nE        +  where 2 = len(   EMPID     EMPNAME   SALARY\\n0    102  Jane Smith  10000.0\\n1    101    John Doe  50000.0)\nE        +  and   4 = len(   EMPID        EMPNAME   SALARY\\n0    101       John Doe  50000.0\\n1    102     Jane Smith      NaN\\n2    103    Peter Jones  60000.0\\n3    104  Mary Williams  55000.0)\n\ntest_fixtures_parametrize.py:15: AssertionError\n\n---------------------------- Captured stdout setup -----------------------------\nConnection Successfull to SQL Server\nConnection Successfull to Oracle\nTest\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC2C10&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC2C10&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n\n----------------------------- Captured stdout call -----------------------------\nIn test_countCheck\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n&#34;}], &#34;tests/test_fixtures_parametrize.py::test_dataValidation[EMP_1-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures_parametrize.py::test_dataValidation[EMP_1-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;144 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures_parametrize.py::test_dataValidation[EMP_1-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;144 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;execute_query = (   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0,    EMPID        EMPNAME   ...  John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0)\nsql_table = &amp;#x27;EMP_1&amp;#x27;, oracle_table = &amp;#x27;EMPLOYEES&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;sql_table,oracle_table&amp;quot;,params_list)\n    def test_dataValidation(execute_query,sql_table,oracle_table):\n        print(&amp;quot;In test_dataValidation&amp;quot;)\n        sql_data,oracle_data=execute_query[0],execute_query[1]\n        #\n        result=pd.merge(sql_data,oracle_data,how=&amp;quot;outer&amp;quot;,indicator=True)\n        print(&amp;quot;Result::\\n&amp;quot;,result)\n        difference=result[result[&amp;#x27;_merge&amp;#x27;] != &amp;#x27;both&amp;#x27;]\n        print(&amp;quot;Difference::\\n&amp;quot;,difference)\n&amp;gt;       assert difference.empty, &amp;quot;Data not matching.&amp;quot;\nE       AssertionError: Data not matching.\nE       assert False\nE        +  where False =    EMPID        EMPNAME   SALARY      _merge\\n1    102     Jane Smith  10000.0   left_only\\n2    102     Jane Smith      NaN  right_only\\n3    103    Peter Jones  60000.0  right_only\\n4    104  Mary Williams  55000.0  right_only.empty\n\ntest_fixtures_parametrize.py:26: AssertionError\n\n---------------------------- Captured stdout setup -----------------------------\nTest\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC2C10&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC2C10&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n\n----------------------------- Captured stdout call -----------------------------\nIn test_dataValidation\nResult::\n    EMPID        EMPNAME   SALARY      _merge\n0    101       John Doe  50000.0        both\n1    102     Jane Smith  10000.0   left_only\n2    102     Jane Smith      NaN  right_only\n3    103    Peter Jones  60000.0  right_only\n4    104  Mary Williams  55000.0  right_only\nDifference::\n    EMPID        EMPNAME   SALARY      _merge\n1    102     Jane Smith  10000.0   left_only\n2    102     Jane Smith      NaN  right_only\n3    103    Peter Jones  60000.0  right_only\n4    104  Mary Williams  55000.0  right_only\n--------------------------- Captured stdout teardown ---------------------------\nIn Orcale Connections after yield\nOracle Connection Closed\nIn SQL Connections after yield\nSQL Connection Closed\n&#34;}], &#34;tests/test_fixtures_parametrize_readQueryExcel.py::test_countCheck[EMP_1-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures_parametrize_readQueryExcel.py::test_countCheck[EMP_1-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;82 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures_parametrize_readQueryExcel.py::test_countCheck[EMP_1-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;82 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\nConnection Successfull to SQL Server\nConnection Successfull to Oracle\nTest\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC3770&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC3770&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   SRC_CNT\n0        2\n   SRC_CNT\n0        4\n\n----------------------------- Captured stdout call -----------------------------\nIn test_countCheck\n   SRC_CNT\n0        2\n   SRC_CNT\n0        4\n&#34;}], &#34;tests/test_fixtures_parametrize_readQueryExcel.py::test_countCheck[EMP-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures_parametrize_readQueryExcel.py::test_countCheck[EMP-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;39 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures_parametrize_readQueryExcel.py::test_countCheck[EMP-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;39 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\nTest\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC3770&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC3770&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   SRC_CNT\n0        4\n   SRC_CNT\n0        4\n\n----------------------------- Captured stdout call -----------------------------\nIn test_countCheck\n   SRC_CNT\n0        4\n   SRC_CNT\n0        4\n&#34;}], &#34;tests/test_fixtures_parametrize_readQueryExcel.py::test_dataValidation[EMP_1-EMPLOYEES]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_fixtures_parametrize_readQueryExcel.py::test_dataValidation[EMP_1-EMPLOYEES]&#34;, &#34;duration&#34;: &#34;123 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_fixtures_parametrize_readQueryExcel.py::test_dataValidation[EMP_1-EMPLOYEES]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;123 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;execute_query = (   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0,    EMPID        EMPNAME   ...  John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0)\nsql_query = &amp;#x27;SELECT EMPID,EMPNAME,SALARY FROM EMP_1&amp;#x27;, oracle_query = &amp;#x27;SELECT EMPID,EMPNAME,SALARY FROM EMPLOYEES&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;sql_query,oracle_query&amp;quot;,params_list_DataCheck,ids=ids_list_data)\n    def test_dataValidation(execute_query,sql_query,oracle_query):\n        print(&amp;quot;In test_dataValidation&amp;quot;)\n        sql_data,oracle_data=execute_query[0],execute_query[1]\n        #\n        result=pd.merge(sql_data,oracle_data,how=&amp;quot;outer&amp;quot;,indicator=True)\n        print(&amp;quot;Result::\\n&amp;quot;,result)\n        difference=result[result[&amp;#x27;_merge&amp;#x27;] != &amp;#x27;both&amp;#x27;]\n        print(&amp;quot;Difference::\\n&amp;quot;,difference)\n&amp;gt;       assert difference.empty, &amp;quot;Data not matching.&amp;quot;\nE       AssertionError: Data not matching.\nE       assert False\nE        +  where False =    EMPID        EMPNAME   SALARY      _merge\\n1    102     Jane Smith  10000.0   left_only\\n2    102     Jane Smith      NaN  right_only\\n3    103    Peter Jones  60000.0  right_only\\n4    104  Mary Williams  55000.0  right_only.empty\n\ntest_fixtures_parametrize_readQueryExcel.py:34: AssertionError\n\n---------------------------- Captured stdout setup -----------------------------\nTest\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC3770&amp;gt; &amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n&amp;lt;pyodbc.Connection object at 0x000001B8DDDC3770&amp;gt;\n&amp;lt;oracledb.Connection to SYSTEM@localhost:1521/XE&amp;gt;\n   EMPID     EMPNAME   SALARY\n0    102  Jane Smith  10000.0\n1    101    John Doe  50000.0\n   EMPID        EMPNAME   SALARY\n0    101       John Doe  50000.0\n1    102     Jane Smith      NaN\n2    103    Peter Jones  60000.0\n3    104  Mary Williams  55000.0\n\n----------------------------- Captured stdout call -----------------------------\nIn test_dataValidation\nResult::\n    EMPID        EMPNAME   SALARY      _merge\n0    101       John Doe  50000.0        both\n1    102     Jane Smith  10000.0   left_only\n2    102     Jane Smith      NaN  right_only\n3    103    Peter Jones  60000.0  right_only\n4    104  Mary Williams  55000.0  right_only\nDifference::\n    EMPID        EMPNAME   SALARY      _merge\n1    102     Jane Smith  10000.0   left_only\n2    102     Jane Smith      NaN  right_only\n3    103    Peter Jones  60000.0  right_only\n4    104  Mary Williams  55000.0  right_only\n--------------------------- Captured stdout teardown ---------------------------\nIn Orcale Connections after yield\nOracle Connection Closed\nIn SQL Connections after yield\nSQL Connection Closed\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;HtmlReports.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>

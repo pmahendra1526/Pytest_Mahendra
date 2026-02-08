@@ -16,28 +16,27 @@ def oracle_connection():
     connection_string=os.getenv("ORACLE_CONNECTION_STRING")
     print("Oracle connection_string:", connection_string)
     try:
-        connection = oracledb.connect(connection_string)
+        sql_conn = oracledb.connect(connection_string)
         print(f"Connection Successfull to Oracle")
-        cursor = connection.cursor()
-        return connection,cursor
+        sql_cursor = sql_conn.cursor()
+        return sql_conn,sql_cursor
     except Exception as e:
         print(f"Oracle connection test failed: {e}")
     # finally:
-    #     if 'cursor' in locals():
-    #         cursor.close()
-    #     if 'connection' in locals():
-    #         connection.close()
-
+    #     if 'sql_cursor' in locals():
+    #         sql_cursor.close()
+    #     if 'sql_conn' in locals():
+    #         sql_conn.close()
 
 def sql_server_connection(): 
     connection_string = os.getenv("SQL_SERVER_CONNECTION_STRING")
 
     print("SQL Server connection_string:", connection_string)
     try:
-        connection = pyodbc.connect(connection_string)
+        oracle_conn = pyodbc.connect(connection_string)
         print(f"Connection Successfull to SQL Server")
-        cursor = connection.cursor()
-        return connection,cursor
+        oracle_cursor = oracle_conn.cursor()
+        return oracle_conn,oracle_cursor
     except Exception as e:
         print(f"SQL Server connection test failed: {e}")
     # finally:
@@ -45,6 +44,9 @@ def sql_server_connection():
     #         cursor.close()
     #     if 'connection' in locals():
     #         connection.close()
+
+def close_connection():
+    pass
 
 def execute_sql_query_pandas(query):
     sql_conn,sql_cursor= sql_server_connection()
@@ -69,9 +71,13 @@ def execute_sql_query_cursor(query):
     try:
         sql_cursor.execute(query)
         data = sql_cursor.fetchall()
+        print("sql_cursor Fetch All::",data)
+        print("sql_cursor Description::",sql_cursor.description)
         columns = [desc[0] for desc in sql_cursor.description]
         # sql_data = [{columns[i]: row[i] for i in range(len(columns))} for row in data]
-        sql_data = [dict(zip(columns, row)) for row in data]
+        sql_data = [dict(zip(columns, row)) for row in data] 
+        # or below code
+        # oracle_data = [{columns[i]: row[i] for i in range(len(columns))} for row in data]
         return sql_data
     except Exception as e:
         print(f"Query execution failed: {e}")
@@ -84,7 +90,7 @@ def execute_oracle_query_cursor(query):
         data = oracle_cursor.fetchall()
         columns = [desc[0] for desc in oracle_cursor.description]
         oracle_data = [{columns[i]: row[i] for i in range(len(columns))} for row in data]
-        # oracle_data = [dict(zip(columns, row)) for row in data]
+        # oracle_data = [dict(zip(columns, row)) for row in data]#  
         return oracle_data
     except Exception as e:
         print(f"Query execution failed: {e}")
@@ -94,4 +100,5 @@ def execute_oracle_query_cursor(query):
 # connection,cursor=execute_sql_query_cursor("SELECT * FROM EMP_1 order by 1")
 # print(connection,cursor)
 
-# sql_server_connection()
+# print(sql_server_connection())
+# oracle_connection()
